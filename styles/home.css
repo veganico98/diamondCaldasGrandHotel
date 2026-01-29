@@ -176,6 +176,11 @@ nav {
     align-items: center;
 }
 
+.hero-content img{
+    width: 50%;
+    height: 50%;
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -595,4 +600,69 @@ footer::after {
 @keyframes scroll {
     0% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(20px); opacity: 0; }
+}
+
+@media (max-width: 250px) {
+
+    nav {
+        padding: 1rem 1.5rem;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-video iframe {
+        width: 250%;
+        height: 190%;
+        filter: brightness(0.7);
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+        letter-spacing: 0.1em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        padding: 0 0.5rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2.5rem;
+        font-size: 0.9rem;
+    }
+
+    .features {
+        padding: 5rem 1.5rem;
+    }
+
+    .feature h3 {
+        font-size: 1.6rem;
+    }
+
+    .feature p {
+        font-size: 1.05rem;
+    }
+
+    .gallery h2,
+    .testimonials h2 {
+        font-size: 2.4rem;
+    }
+
+    .gallery-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    footer {
+        padding: 3rem 1.5rem 2rem;
+    }
 }

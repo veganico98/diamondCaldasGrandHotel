@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós - Diamond Diamond Caldas Grand Hotel</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/sobreNos.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo"><img style="width: 10%" src="../img/logo3.png"></a>
+            <a href="../index.html" class="logo"><img style="width: 10%" src="../img/logo3.png" alt="Diamond Caldas"></a>
+
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="nav-close" aria-label="Fechar menu">&times;</button>
+
             <ul class="nav-links">
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="sobre-nos.html" class="active">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="index.html" class="active">Sobre Nós</a></li>
+                <li><a href="../turismo/index.html">Turismo</a></li>
+                <li><a href="../planos/">Planos</a></li>
+                <li><a href="../index.html#quartos">Quartos</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#contato">Contato</a></li>
             </ul>
         </nav>
+        <div class="nav-overlay" aria-hidden="true"></div>
     </header>
 
     <section class="hero">
@@ -213,7 +226,7 @@
                 Descubra um lugar onde o tempo desacelera, a história é preservada
                 e o bem-estar faz parte de cada detalhe da sua estadia.
             </p>
-            <a href="#" class="cta-button">
+            <a href="https://wa.me/5511987055571" class="cta-button">
                 <span>Reserve Agora</span>
             </a>
         </div>
@@ -243,5 +256,6 @@
         &copy; 2026 Diamond Caldas Grand Hotel
     </div>
 </footer>
+<script src="../scripts/navToggle.js"></script>
 </body>
 </html>

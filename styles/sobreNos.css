@@ -61,29 +61,10 @@ header {
 nav {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-}
-
-.logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    color: var(--champagne);
-    text-transform: uppercase;
-    position: relative;
-    text-decoration: none;
-}
-
-.logo::before {
-    position: absolute;
-    left: -30px;
-    color: var(--rose-accent);
-    animation: sparkle 2s infinite;
 }
 
 @keyframes sparkle {

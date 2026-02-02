@@ -12,11 +12,11 @@
         /* Estilos específicos da página de planos */
         .hero.planos {
             min-height: 70vh;
-            padding-top: 2rem;
+            padding-top: 8rem;
         }
         .plans {
             padding: 7rem 3rem;
-            margin-top: 5em;
+            margin-top: 0;
             background: linear-gradient(to bottom, var(--ivory), rgba(231, 201, 195, 0.18));
         }
         .plans-intro {
@@ -125,6 +125,24 @@
         @media (max-width: 768px) {
             .plans, .highlights { padding: 4.5rem 1.5rem; }
             .hero.planos { min-height: 65vh; padding-top: 7rem; }
+        }
+
+        @media (max-width: 300px) {
+            nav { padding: 0.9rem 1rem; }
+            .hero.planos { min-height: 60vh; padding: 6.5rem 1rem 3rem; }
+            .hero.planos h1 { font-size: 2.2rem; }
+            .hero-subtitle { font-size: 1rem; }
+            .hero-description { font-size: 1.02rem; padding: 0 0.4rem; }
+            .plans, .highlights { padding: 4rem 1rem; }
+            .plans-intro { font-size: 1.05rem; }
+            .plans-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .plan-card { padding: 1.6rem 1.4rem; }
+            .plan-title { font-size: 1.4rem; }
+            .plan-price { font-size: 1.05rem; }
+            .plan-features li { font-size: 0.98rem; }
+            .plan-actions { flex-direction: column; }
+            .highlights h2 { font-size: 2rem; }
+            .highlight-card { font-size: 1rem; }
         }
     </style>
 </head>

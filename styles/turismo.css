@@ -137,3 +137,19 @@
     .spot-image img { height: 190px; }
     .experience h2 { font-size: 2.2rem; }
 }
+
+@media (max-width: 300px) {
+    .hero.turismo { height: 65vh; padding: 6.5rem 1rem 3rem; }
+    .hero.turismo h1 { font-size: 2.2rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .intro { font-size: 1.05rem; padding: 0 1rem 1.6rem; }
+    .spots, .experience, .map-section { padding: 4rem 1rem; }
+    .spots-grid { grid-template-columns: 1fr; gap: 1.6rem; }
+    .spot-image img { height: 170px; }
+    .spot-body h3 { font-size: 1.25rem; }
+    .spot-body p { font-size: 1.02rem; }
+    .experience h2 { font-size: 2rem; }
+    .experience p { font-size: 1.05rem; }
+    .cta-row { flex-direction: column; }
+    .map-frame iframe { height: 320px; }
+}

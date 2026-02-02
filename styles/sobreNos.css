@@ -677,3 +677,26 @@ nav {
     .team-title h2,
     .cta-content h2 { font-size: 2.5rem; }
 }
+
+@media (max-width: 300px) {
+    .hero { height: 70vh; padding: 6rem 1rem 3rem; }
+    .hero h1 { font-size: 2.2rem; letter-spacing: 0.08em; }
+    .hero-subtitle { font-size: 1rem; letter-spacing: 0.1em; }
+    nav { padding: 0.9rem 1rem; }
+    .story-section, .values-section, .timeline-section, .team-section, .cta-section { padding: 5rem 1.2rem; }
+    .story-intro h2,
+    .values-title h2,
+    .timeline-title h2,
+    .team-title h2,
+    .cta-content h2 { font-size: 2.2rem; }
+    .story-intro .subtitle,
+    .story-text p,
+    .values-grid p,
+    .timeline-content p,
+    .team-bio,
+    .cta-content p { font-size: 1.05rem; }
+    .values-grid,
+    .team-grid { gap: 2rem; }
+    .timeline { padding-left: 2.5rem; }
+    .timeline-item::before { left: -2.8rem; }
+}

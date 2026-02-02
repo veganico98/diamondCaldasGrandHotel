@@ -640,15 +640,12 @@ nav {
     align-items: center;
     justify-content: center;
   }
-
   .story-container{
     width: 100%;
   }
-
   .story-image{
     width: 100%;
   }
-
   .story-image img{
     width: 100vw;
   }

@@ -54,42 +54,9 @@ header {
         opacity: 1;
     }
 }
-nav {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-}
 @keyframes sparkle {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.6; transform: scale(1.2); }
-}
-.nav-links {
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-    align-items: center;
-}
-.nav-links a {
-    text-decoration: none;
-    color: var(--dark);
-    font-size: 1.1rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    transition: all 0.3s ease;
-    position: relative;
-}
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--rose-accent);
-    transition: width 0.3s ease;
 }
 .hero {
     height: 70vh;
@@ -597,9 +564,6 @@ nav {
     font-size: 1rem;
     letter-spacing: 0.1em;
     text-align: center;
-  }
-  nav {
-    padding: 0.9rem 1rem;
   }
   .story-section,
   .values-section,

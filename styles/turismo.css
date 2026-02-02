@@ -131,21 +131,13 @@
     height: 420px;
     border: 0;
 }
-@media (max-width: 768px) {
-    .spots, .experience, .map-section { padding: 4.5rem 1.5rem; }
-    .hero.turismo { height: 65vh; }
-    .spot-image img { height: 190px; }
-    .experience h2 { font-size: 2.2rem; }
-}
-
 @media (max-width: 480px) {
     .hero.turismo { height: auto; min-height: 70vh; padding: 6.2rem 1.2rem 3rem; }
     .hero.turismo h1 { font-size: 2.6rem; }
     .hero-subtitle { font-size: 1.1rem; }
     .intro { font-size: 1.1rem; padding: 0 1.2rem 1.8rem; }
 }
-
-@media (max-width: 300px) {
+@media (max-width: 768px) {
     .hero.turismo { height: 65vh; padding: 6.5rem 1rem 3rem; }
     .hero.turismo h1 { font-size: 2.2rem; }
     .hero-subtitle { font-size: 1rem; }

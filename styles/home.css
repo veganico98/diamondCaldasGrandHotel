@@ -3,26 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* =========================
-   PALETA DIAMOND (VERSÃO 2)
-   ========================= */
 :root {
-    /* Base clara */
+    
     --ivory: #F6F1EB;
     --rose-nude: #E7C9C3;
     --beige-sand: #E2D3C3;
     --rose-antique: #C6A3A0;
-
-    /* Metais */
+    
     --gold-diamond: #C9A24D;
     --champagne: #9E7C3A;
-
-    /* Neutros escuros */
+    
     --graphite: #1C1C1C;
     --stone: #4A4A4A;
-
-    /* Alias (mantém sua estrutura) */
+    
     --rose-primary: var(--rose-nude);
     --rose-dark: var(--rose-antique);
     --rose-light: var(--ivory);
@@ -30,15 +23,12 @@
     --white: var(--ivory);
     --dark: var(--graphite);
 }
-
 body {
     font-family: 'Cormorant Garamond', serif;
     background: var(--ivory);
     color: var(--graphite);
     overflow-x: hidden;
 }
-
-/* Header */
 header {
     position: fixed;
     top: 0;
@@ -53,23 +43,19 @@ header {
     border-bottom: 1px solid rgba(158, 124, 58, 0.35);
     animation: slideDown 0.8s ease-out;
 }
-
 @keyframes slideDown {
     from { transform: translateY(-100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
-
 @keyframes sparkle {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.6; transform: scale(1.2); }
 }
-
 .nav-links {
     display: flex;
     gap: 3rem;
     list-style: none;
 }
-
 .nav-close {
     display: none;
     position: fixed;
@@ -88,13 +74,11 @@ header {
     box-shadow: 0 10px 26px rgba(28,28,28,0.16), inset 0 1px 0 rgba(255,255,255,0.35);
     transition: transform 0.2s ease, background 0.25s ease, color 0.25s ease;
 }
-
 .nav-close:hover {
     transform: translateY(-1px);
     background: rgba(201, 162, 77, 0.18);
     color: var(--gold-diamond);
 }
-
 .nav-links a {
     text-decoration: none;
     color: var(--graphite);
@@ -104,7 +88,6 @@ header {
     transition: all 0.3s ease;
     position: relative;
 }
-
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -115,16 +98,12 @@ header {
     background: var(--gold-diamond);
     transition: width 0.3s ease;
 }
-
 .nav-links a:hover {
     color: var(--champagne);
 }
-
 .nav-links a:hover::after {
     width: 100%;
 }
-
-/* Hero Section */
 .hero {
     height: 80vh;
     position: relative;
@@ -149,7 +128,6 @@ header {
         );
     overflow: hidden;
 }
-
 .hero::before {
     content: '';
     position: absolute;
@@ -165,13 +143,11 @@ header {
     border-radius: 50%;
     animation: float 20s infinite ease-in-out;
 }
-
 @keyframes float {
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
     33% { transform: translate(30px, -30px) rotate(120deg); }
     66% { transform: translate(-20px, 20px) rotate(240deg); }
 }
-
 .hero-content {
     text-align: center;
     z-index: 2;
@@ -184,17 +160,14 @@ header {
     justify-content: center;
     align-items: center;
 }
-
 .hero-content img {
     width: 50%;
     height: 50%;
 }
-
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 5.5rem;
@@ -206,7 +179,6 @@ header {
     line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(158, 124, 58, 0.18);
 }
-
 .hero-subtitle {
     font-size: 1.8rem;
     color: var(--stone);
@@ -215,7 +187,6 @@ header {
     margin-bottom: 3rem;
     opacity: 0.95;
 }
-
 .hero-description {
     font-size: 1.3rem;
     color: var(--graphite);
@@ -227,8 +198,6 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-/* CTA: mais “joia” */
 .cta-button {
     display: inline-block;
     padding: 1.15rem 3.6rem;
@@ -246,7 +215,6 @@ header {
     overflow: hidden;
     box-shadow: 0 14px 35px rgba(158, 124, 58, 0.28), inset 0 1px 0 rgba(255,255,255,0.4);
 }
-
 .cta-button::before {
     content: '';
     position: absolute;
@@ -259,29 +227,23 @@ header {
     transform: translate(-50%, -50%);
     transition: width 0.6s ease, height 0.6s ease;
 }
-
 .cta-button:hover::before {
     width: 420px;
     height: 420px;
 }
-
 .cta-button:hover {
     color: var(--champagne);
     border-color: var(--champagne);
 }
-
 .cta-button span {
     position: relative;
     z-index: 1;
 }
-
-/* Features Section */
 .features {
     padding: 8rem 3rem;
     background: linear-gradient(to bottom, var(--ivory), rgba(231, 201, 195, 0.18));
     position: relative;
 }
-
 .features::before {
     content: '';
     position: absolute;
@@ -291,7 +253,6 @@ header {
     height: 1px;
     background: linear-gradient(to right, transparent, rgba(158, 124, 58, 0.55), transparent);
 }
-
 .features-grid {
     max-width: 1400px;
     margin: 0 auto;
@@ -299,22 +260,18 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 4rem;
 }
-
 .feature {
     text-align: center;
     padding: 2rem;
     transition: transform 0.3s ease;
     animation: fadeInUp 0.8s ease-out both;
 }
-
 .feature:nth-child(1) { animation-delay: 0.1s; }
 .feature:nth-child(2) { animation-delay: 0.2s; }
 .feature:nth-child(3) { animation-delay: 0.3s; }
-
 .feature:hover {
     transform: translateY(-10px);
 }
-
 .feature-icon {
     font-size: 4rem;
     color: var(--gold-diamond);
@@ -322,16 +279,13 @@ header {
     display: inline-block;
     transition: transform 0.3s ease;
 }
-
 .feature-icon img {
     width: 5em;
     height: 5em;
 }
-
 .feature:hover .feature-icon {
     transform: scale(1.1) rotate(5deg);
 }
-
 .feature h3 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
@@ -340,20 +294,16 @@ header {
     margin-bottom: 1rem;
     letter-spacing: 0.05em;
 }
-
 .feature p {
     font-size: 1.2rem;
     color: var(--stone);
     line-height: 1.8;
     opacity: 0.95;
 }
-
-/* Gallery Section */
 .gallery {
     padding: 8rem 0;
     background: linear-gradient(to bottom, rgba(231, 201, 195, 0.28), var(--ivory));
 }
-
 .gallery h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
@@ -364,7 +314,6 @@ header {
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
-
 .gallery-subtitle {
     text-align: center;
     font-size: 1.3rem;
@@ -372,7 +321,6 @@ header {
     margin-bottom: 4rem;
     opacity: 0.95;
 }
-
 .gallery-grid {
     max-width: 1400px;
     margin: 0 auto;
@@ -381,7 +329,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
 .gallery-item {
     position: relative;
     background: linear-gradient(
@@ -393,25 +340,20 @@ header {
     border: 2px solid rgba(201, 162, 77, 0.25);
     transition: all 0.4s ease;
 }
-
 .gallery-item:hover {
     transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(158, 124, 58, 0.18);
     border-color: var(--gold-diamond);
 }
-
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* Testimonials */
 .testimonials {
     padding: 8rem 3rem;
     background: var(--ivory);
 }
-
 .testimonials h2 {
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
@@ -422,7 +364,6 @@ header {
     margin-bottom: 4rem;
     text-transform: uppercase;
 }
-
 .testimonials-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -430,7 +371,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
 }
-
 .testimonial {
     padding: 3rem;
     background: linear-gradient(
@@ -442,10 +382,8 @@ header {
     position: relative;
     animation: fadeInUp 0.8s ease-out both;
 }
-
 .testimonial:nth-child(1) { animation-delay: 0.1s; }
 .testimonial:nth-child(2) { animation-delay: 0.2s; }
-
 .testimonial::before {
     content: '"';
     position: absolute;
@@ -455,7 +393,6 @@ header {
     color: rgba(201, 162, 77, 0.28);
     font-family: 'Playfair Display', serif;
 }
-
 .testimonial-text {
     font-size: 1.2rem;
     line-height: 1.8;
@@ -464,33 +401,27 @@ header {
     position: relative;
     z-index: 1;
 }
-
 .testimonial-author {
     font-weight: 600;
     color: var(--champagne);
     font-size: 1.1rem;
     letter-spacing: 0.05em;
 }
-
-/* Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 3rem; }
     .hero-subtitle { font-size: 1.3rem; }
     .gallery-grid { grid-template-columns: 1fr; }
     .features-grid { grid-template-columns: 1fr; }
 }
-
 @media (max-width: 480px) {
     .hero { padding: 6.5rem 1.2rem 3rem; height: auto; min-height: 75vh; }
     .hero-logo { width: 70%; }
     .hero-description { font-size: 1.1rem; line-height: 1.65; }
 }
-
 @keyframes scroll {
     0% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(20px); opacity: 0; }
 }
-
 @media (max-width: 300px) {
     nav { padding: 0.9rem 1rem; }
     .hero { height: 95vh; padding: 6rem 1rem 3rem; }

@@ -138,6 +138,13 @@
     .experience h2 { font-size: 2.2rem; }
 }
 
+@media (max-width: 480px) {
+    .hero.turismo { height: auto; min-height: 70vh; padding: 6.2rem 1.2rem 3rem; }
+    .hero.turismo h1 { font-size: 2.6rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .intro { font-size: 1.1rem; padding: 0 1.2rem 1.8rem; }
+}
+
 @media (max-width: 300px) {
     .hero.turismo { height: 65vh; padding: 6.5rem 1rem 3rem; }
     .hero.turismo h1 { font-size: 2.2rem; }

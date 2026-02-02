@@ -678,6 +678,12 @@ nav {
     .cta-content h2 { font-size: 2.5rem; }
 }
 
+@media (max-width: 480px) {
+    .hero { height: auto; min-height: 70vh; padding: 6.2rem 1.2rem 3rem; }
+    .hero h1 { font-size: 2.6rem; letter-spacing: 0.1em; }
+    .hero-subtitle { font-size: 1.1rem; letter-spacing: 0.12em; }
+}
+
 @media (max-width: 300px) {
     .hero { height: 70vh; padding: 6rem 1rem 3rem; }
     .hero h1 { font-size: 2.2rem; letter-spacing: 0.08em; }

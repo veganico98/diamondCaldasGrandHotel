@@ -262,7 +262,7 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.gallery h2 {
+.gallery h2, .map-section h2{
     font-family: 'Playfair Display', serif;
     font-size: 3.5rem;
     font-weight: 900;
